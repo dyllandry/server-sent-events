@@ -1,6 +1,6 @@
 # Server Sent Events
 
-This is a barebones demo of server sent events. Checkout [server.js]('/server.js') and [index.html]('/index.html') for the implementation.
+This is a barebones demo of server sent events. Checkout [server.js](/server.js) and [index.html](/index.html) for the implementation.
 
 ## Improvements
 
