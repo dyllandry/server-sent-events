@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ol id="events"></ol>
+    <script>
+        const eventSource = new EventSource('/server-sent-event')
+        const eventContainer = document.getElementById('events')
+        eventSource.onmessage = function (event) {
+            const li = document.createElement('li')
+            li.textContent = event.data
+            eventContainer.appendChild(li)
+        }
+        </script>
+</body>
+</html>
